@@ -13,7 +13,7 @@ function Navbar() {
             className="flex title-font font-extrabold items-center uppercase text-gray-100"
           >
             <Image
-              src="/pizza.png"
+              src="/pizza.svg"
               alt="logo"
               width={40}
               height={40}
@@ -29,6 +29,33 @@ function Navbar() {
               className="text-white mr-5 cursor-pointer hover:text-gray-200 flex items-center"
             >
               Cart
+              {/* Embedded SVG Icon */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 mx-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span
+                className="inline-flex items-center bg-red-20 py-1 px-2 rounded-full
+              text-xs font-medium text-red-50 ring-1 shadow-[0_0_15px_1px]"
+              >
+                0
+              </span>
+            </Link>
+            <Link
+              href={"/orders"}
+              className="text-white mr-5 cursor-pointer hover:text-gray-200 flex items-center"
+            >
+              My Orders
               {/* Embedded SVG Icon */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,6 +87,46 @@ function Navbar() {
                     />
                   </g>
                 </g>
+              </svg>
+            </Link>
+            <Link
+              href={"/login"}
+              className="text-white mr-5 cursor-pointer hover:text-gray-200 flex items-center"
+            >
+              Login
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 mx-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={1.5}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                />
+              </svg>
+            </Link>
+            <Link
+              href={"/signup"}
+              className="text-white mr-5 cursor-pointer hover:text-gray-200 flex items-center"
+            >
+              Signup
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 x-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={1.5}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
+                />
               </svg>
             </Link>
           </nav>
